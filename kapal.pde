@@ -1,0 +1,91 @@
+void kapal() {
+        pushMatrix();
+          fill(195, 129, 84, 255);
+          stroke(0);
+          strokeWeight(1.13385827);
+          beginShape();
+          vertex(135.85548f, 104.96f);
+          vertex(14.60129f, 115.75226f);
+          vertex(19.045161f, 126.3329f);
+          vertex(123.79355f, 126.12129f);
+          endShape(CLOSE);
+         popMatrix();
+          
+         pushMatrix();
+          fill(#fff4f4);
+          stroke(0);
+          strokeWeight(0.37795276);
+          beginShape();
+          vertex(81.153548f, 106.75871f);
+          vertex(81.365161f, 36.185807f);
+          vertex(83.163871f, 36.291613f);
+          vertex(83.163871f, 106.6529f);
+          endShape(CLOSE);
+         popMatrix();
+        
+         pushMatrix();
+          fill(#884a39);
+          stroke(0);
+          strokeWeight(1.13386);
+          beginShape();
+            vertex(34.916129, 114.16516);
+            vertex(34.916446419, 110.673549);
+            vertex(125.486768419, 103.478709);
+            vertex(125.592578419, 105.489029);
+          endShape(CLOSE);
+         popMatrix();
+        
+         pushMatrix();
+          fill(#ffffff);
+          stroke(0);
+          strokeWeight(0.377953); 
+          beginShape();
+          vertex(83.163871f, 36.291613f);
+          vertex(83.163871f, 29.308387f);
+          vertex(68.985806f, 29.52f);
+          vertex(62.637419f, 35.974194f);
+          endShape(CLOSE);
+         popMatrix();
+        
+        pushMatrix();
+          fill(#f24c3d);
+          stroke(0);
+          strokeWeight(0.377953);
+          beginShape();
+          vertex(83.163871f, 29.414194f);
+          vertex(83.058065f, 24.547097f);
+          vertex(62.425806f, 24.335484f);
+          vertex(68.985806f, 29.52f);
+          endShape(CLOSE);
+        popMatrix();
+        
+        pushMatrix();
+          fill(#f0edd4);
+          stroke(0);
+          strokeWeight(0.377953);
+          beginShape();
+          vertex(83.375484f, 101.36258f);
+          bezierVertex(83.375484f, 101.36258f, 93.670207f, 82.747004f, 91.724979f, 68.831143f);
+          bezierVertex(89.779751f, 54.915281f, 82.644802f, 34.116307f, 82.644802f, 34.116307f);
+          bezierVertex(82.644802f, 34.116307f, 106.88533f, 54.466384f, 114.36698f, 71.973436f);
+          bezierVertex(121.84863f, 89.480488f, 122.69827f, 102.79782f, 122.69827f, 102.79782f);
+          bezierVertex(122.69827f, 102.79782f, 99.864333f, 95.587991f, 83.375764f, 101.36258f);
+          endShape(CLOSE);
+        popMatrix();
+        
+        pushMatrix();
+          fill(#f0edd4);
+          stroke(0);
+          strokeWeight(0.377953);
+          beginShape();
+            vertex(81.101042f, 102.94745f);
+            bezierVertex(81.101042f, 102.94745f, 63.593991f, 102.19928f, 57.90794f, 105.04234f);
+            bezierVertex(52.221889f, 107.8854f, 46.835104f, 109.38173f, 46.835104f, 109.38173f);
+            vertex(39.951989f, 109.98027f);
+            bezierVertex(39.951989f, 109.98027f, 58.656104f, 90.079087f, 61.050231f, 84.841934f);
+            bezierVertex(63.444357f, 79.604782f, 81.250674f, 39.952058f, 81.250674f, 39.952058f);
+            vertex(78.407648f, 56.41161f);
+            bezierVertex(78.407648f, 56.41161f, 75.564622f, 88.984156f, 81.250674f, 103.94745f);
+          endShape(CLOSE);
+         popMatrix();
+}
