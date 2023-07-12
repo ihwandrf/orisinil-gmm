@@ -110,3 +110,9 @@ void kapalSceneDua() {
   endShape(CLOSE);
   popMatrix();
 }
+
+//scene tiga
+void kapalSceneTiga(){
+  translate(-80,-650);
+  shape(bot, 280, 40,800,678); 
+}

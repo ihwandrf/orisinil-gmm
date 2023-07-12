@@ -7,9 +7,9 @@ void MouseInteraction(){
   yObjek = 200;
 // Menghitung perbedaan antara posisi objek dengan posisi mouse
   float deltaX = mouseX - xObjek;
-  float deltaY = mouseY - yObjek;
+  //float deltaY = mouseY - yObjek;
   
-  // Menggunakan perbedaan tersebut untuk membuat objek mengikuti gerakan mouse
+  
   
   // Menggambar objek pada posisi yang telah diubah
 pushMatrix();
@@ -198,6 +198,15 @@ void rotasiSun(){
   //  angleSun += 0.003;
   //}
   
-  angleSun += 0.0038;
+  angleSun += 0.0045;
   
+}
+
+void keyPressed(){
+  if(key == '1'){
+    closeUp = false;
+  }
+  else if(key == '2'){
+    closeUp = true;
+  }
 }
