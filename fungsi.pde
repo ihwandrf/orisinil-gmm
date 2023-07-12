@@ -204,9 +204,13 @@ void rotasiSun(){
 
 void keyPressed(){
   if(key == '1'){
-    closeUp = false;
+    zoomOut = false;
+    zoomIn = false;
   }
   else if(key == '2'){
-    closeUp = true;
+    zoomOut = true;
+  }else if(key == '3'){
+    zoomOut = false;
+    zoomIn = true;
   }
 }

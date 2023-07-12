@@ -33,7 +33,8 @@ boolean rainy;
 boolean afternoon;
 boolean dusk;
 boolean night;
-boolean closeUp;
+boolean zoomOut;
+boolean zoomIn;
 PShape bot;
 
 float angleBulan = 0;     // Variabel sudut rotasi
@@ -55,7 +56,8 @@ void setup() {
   afternoon = false;
   dusk = false;
   night = false;
-  closeUp = false;
+  zoomOut = false;
+  zoomIn = false;
   
   frameRate(30);
   minim = new Minim(this);
@@ -143,13 +145,13 @@ void draw() {
     popMatrix();
   }
   
-  if(night != true && closeUp != true){
+  if(night != true && zoomOut != true){
     rotasiSun();
     pushMatrix();
       laut ();
     popMatrix();
     
-  }else if(night == true && closeUp != true){
+  }else if(night == true && zoomOut != true){
     pushMatrix();
       langitMalam();
     popMatrix();
@@ -158,7 +160,7 @@ void draw() {
       laut ();
       
     popMatrix();
-  }else if(night == true && closeUp == true){
+  }else if(night == true && zoomOut == true){
     //translate(0,655);
     pushMatrix();
       langitMalam();
@@ -168,11 +170,24 @@ void draw() {
     popMatrix();  
   }
   
-  if(closeUp == true){
+  if(zoomOut == true){
     pushMatrix();
       kapalSceneTiga();
     popMatrix();
-  }else if(closeUp != true){
+  }
+  else if(zoomIn == true){
+    pushMatrix();
+      translate(0, 60);
+      scale(2.18,1.6);
+      kapalSceneDua();
+    popMatrix();
+    pushMatrix();
+      translate(100, 0);
+      scale(1.8,1.8);
+      orang();
+    popMatrix();
+  }
+  else if(zoomOut != true & zoomIn != true){
     pushMatrix();
       MouseInteraction();
     popMatrix();
@@ -181,7 +196,7 @@ void draw() {
   
   
   
-  if(counter >= 250 && counter < 800 && closeUp != true){
+  if(counter >= 250 && counter < 800 && zoomOut != true && zoomIn != true){
         pushMatrix();
           beginShape();
           gambarOmbak();
@@ -189,7 +204,7 @@ void draw() {
         popMatrix();
   }
   
-  else if(counter >= 820 && counter <1200 && closeUp != true){
+  else if(counter >= 820 && counter <1200 && zoomOut != true && zoomIn != true){
     rainy = false;
     sunny = true;
     pushMatrix();
