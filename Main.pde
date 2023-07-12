@@ -152,12 +152,12 @@ void draw() {
   }
   
   if(night != true && closeUp != true){
-    
+    rotasiSun();
     pushMatrix();
       laut ();
       MouseInteraction();
     popMatrix();
-    rotasiSun();
+    
   }else if(night == true){
     pushMatrix();
       langitMalam();

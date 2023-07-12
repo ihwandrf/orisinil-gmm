@@ -190,6 +190,14 @@ void rotasiSun(){
    rotate(angleSun);                // Melakukan rotasi objek
    sun();
   popMatrix();                  // Mengembalikan matriks transformasi sebelumnya
-
-  angleSun += 0.002;
+  
+  //if(sunny==true){
+  //  angleSun += 0.005;
+  //}
+  //else(){
+  //  angleSun += 0.003;
+  //}
+  
+  angleSun += 0.0038;
+  
 }
