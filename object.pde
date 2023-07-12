@@ -483,4 +483,17 @@ void sun() {
          popMatrix();
 }
 
-//
+//object bulan
+void bulan() {
+  //bulan
+  fill (#000050);
+  stroke(#000050);
+  ellipse(175,45,50,50);
+  fill (#2c2c5e);
+  stroke(#2c2c5e);
+  ellipse(175,45,35,35);
+  fill (255);
+  stroke(255);
+  ellipse(175,45,20,20);
+  //bulan
+}

@@ -160,3 +160,36 @@ void langitMalam(){
       scale(4);
       malam();
   }
+
+  
+//matahari naik turun
+
+//bulan naik turun
+void rotasiBulan(){
+  
+  
+  // if (x > width) {
+  //  x = 0;                     // Mengatur ulang posisi objek ke awal
+  //}
+  
+  pushMatrix();                 // Menyimpan matriks transformasi sebelumnya
+  translate(700,800);
+  scale(4);
+   rotate(angleBulan);                // Melakukan rotasi objek
+   bulan();
+  popMatrix();                  // Mengembalikan matriks transformasi sebelumnya
+
+  angleBulan += 0.01;
+}
+
+//rotasi matahari
+void rotasiSun(){
+   pushMatrix();                 // Menyimpan matriks transformasi sebelumnya
+    translate(700,800);
+    //scale(4);
+   rotate(angleSun);                // Melakukan rotasi objek
+   sun();
+  popMatrix();                  // Mengembalikan matriks transformasi sebelumnya
+
+  angleSun += 0.002;
+}

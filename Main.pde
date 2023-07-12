@@ -1,4 +1,3 @@
-
 int x1 = 200;
 int y1 = 0;
 
@@ -35,6 +34,9 @@ boolean afternoon;
 boolean dusk;
 boolean night;
 boolean closeUp;
+
+float angleBulan = 0;     // Variabel sudut rotasi
+float angleSun = 0;     // Variabel sudut rotasi
 
 import ddf.minim.*;
 Minim minim;
@@ -146,18 +148,21 @@ void draw() {
         popMatrix();
   }
   if(night == true){
-    pushMatrix();
-      langitMalam();
-    popMatrix();
+    
   }
   
   if(night != true && closeUp != true){
+    
     pushMatrix();
-      sun();
       laut ();
       MouseInteraction();
-    popMatrix();  
+    popMatrix();
+    rotasiSun();
   }else if(night == true){
+    pushMatrix();
+      langitMalam();
+    popMatrix();
+    rotasiBulan();
     pushMatrix();
       laut ();
       MouseInteraction();
@@ -172,7 +177,6 @@ void draw() {
           gambarOmbak();
           endShape();
         popMatrix();
-        resetMatrix();
   }
   
   else if(counter >= 820 && counter <1200){
