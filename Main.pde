@@ -175,6 +175,8 @@ void draw() {
   
   if(zoomOut == true){
     pushMatrix();
+    scale(1.5);
+    translate(-200, -290);
       kapalSceneTiga();
     popMatrix();
   }
