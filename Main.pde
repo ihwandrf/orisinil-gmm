@@ -61,7 +61,7 @@ void setup() {
   
   frameRate(30);
   minim = new Minim(this);
-  mainSound = minim.loadFile("nenekmoyangku.WAV");
+  mainSound = minim.loadFile("nenekmoyangku.mp3");
   rainNoise = minim.loadFile("rainnoise.mp3");
   wavesNoise = minim.loadFile("wavenoise.mp3");
   boatSail = minim.loadFile("boatsail.mp3");
@@ -71,14 +71,14 @@ void setup() {
   for (int i=0; i<drops.length; i++) {
     drops [i] = new Drop();
   }
+  mainSound.loop();
+  wavesNoise.loop();
+  boatSail.loop();
+  boatSail.loop();
 }
 
 void draw() {
-  mainSound.play();
-  wavesNoise.loop();
-  boatSail.play();
   
-
   keyPressed();
   
   if(rainy == true){
@@ -142,6 +142,9 @@ void draw() {
     popMatrix();
     pushMatrix();
       gambarOmbak();
+    popMatrix();
+    pushMatrix();
+    rotasiBulan();
     popMatrix();
   }
   
