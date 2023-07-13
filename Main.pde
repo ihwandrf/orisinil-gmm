@@ -143,9 +143,6 @@ void draw() {
     pushMatrix();
       gambarOmbak();
     popMatrix();
-    pushMatrix();
-    rotasiBulan();
-    popMatrix();
   }
   
   if(night != true && zoomOut != true){
